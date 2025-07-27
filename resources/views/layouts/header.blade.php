@@ -23,7 +23,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="right-element">
-							<a href="#" class="user-account for-buy"><i
+							<a href="{{route('login')}}" class="user-account for-buy"><i
 									class="icon icon-user"></i><span>Account</span></a>
 							<a href="#" class="cart for-buy"><i class="icon icon-clipboard"></i><span>Cart:(0
 									$)</span></a>
@@ -74,10 +74,9 @@
 											{{-- <li><a href="index.html">Styles</a></li> --}}
 											<li><a href="{{route('faqs.index')}}">Faq</a></li>
 											<li><a href="{{route('aboutus')}}">Team</a></li>
-											<li><a href="index.html">Our Store</a></li>
-											<li><a href="index.html">Product Single</a></li>
-											<li><a href="index.html">Contact</a></li>
-											<li><a href="index.html">Thank You</a></li>
+											
+											{{-- <li><a href="{{route('contact')}}">Contact</a></li> --}}
+											
 										</ul>
 
 									</li>

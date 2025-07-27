@@ -54,25 +54,7 @@
                 </div>
                 
                 <!-- Social Media Links -->
-                <div class="col-span-1">
-                    <label for="instagram" class="block text-pastry-primary font-medium mb-2">Instagram URL (optional)</label>
-                    <input type="url" id="instagram" name="instagram" value="{{ old('instagram') }}" 
-                           class="w-full px-4 py-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 @error('instagram') border-red-500 @enderror"
-                           placeholder="https://www.instagram.com/username">
-                    @error('instagram')
-                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                    @enderror
-                </div>
-                
-                <div class="col-span-1">
-                    <label for="facebook" class="block text-pastry-primary font-medium mb-2">Facebook URL (optional)</label>
-                    <input type="url" id="facebook" name="facebook" value="{{ old('facebook') }}" 
-                           class="w-full px-4 py-2 border rounded-lg focus:ring-orange-500 focus:border-orange-500 @error('facebook') border-red-500 @enderror"
-                           placeholder="https://www.facebook.com/username">
-                    @error('facebook')
-                        <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
-                    @enderror
-                </div>
+               
             </div>
             
             <div class="mt-8 flex justify-end space-x-4">

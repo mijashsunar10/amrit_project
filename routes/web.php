@@ -64,4 +64,6 @@ Route::prefix('ourteam')->group(function () {
 
 Route::get('/contact',[ContactController::class,'contact'])->name('contact');
  Route::post('/contact/send', [ContactController::class, 'submitContactForm'])->name('contact.send');
+
+ 
 require __DIR__.'/auth.php';

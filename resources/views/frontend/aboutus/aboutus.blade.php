@@ -167,6 +167,13 @@
                     The passionate team behind BookCycle who make this literary ecosystem possible.
                 </p>
             </div>
+              @auth
+                <div class="flex justify-end mb-6 space-x-4 animate-reveal-right" style="animation-delay: 0.2s">
+                    <a href="{{ route('ourteam.create') }}" class="px-5 py-2 bg-bookcycle-primary hover:bg-yellow-600 text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center animate-bounce-in">
+                        <i class="fas fa-edit mr-2"></i> Add Team
+                    </a>
+                </div>
+            @endauth
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 @forelse($teamMembers as $index => $member)
