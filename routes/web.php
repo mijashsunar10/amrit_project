@@ -5,7 +5,9 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PartnerController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\TeamMemberController;
 use App\Models\AboutUs;
+use App\Models\TeamMember;
 
 Route::get('/', function () {
     return view('welcome');
@@ -46,6 +48,14 @@ Route::middleware(['auth'])->group(function() {
     Route::delete('/admin/about-us/destroy', [AboutUsController::class, 'destroy'])->name('aboutus.destroy');
 });
 
+Route::prefix('ourteam')->group(function () {
+    
+    Route::get('/create', [TeamMemberController::class, 'create'])->name('ourteam.create');
+    Route::post('/store', [TeamMemberController::class, 'store'])->name('ourteam.store');
+    Route::get('/{teamMember}/edit', [TeamMemberController::class, 'edit'])->name('ourteam.edit');
+    Route::put('/{teamMember}', [TeamMemberController::class, 'update'])->name('ourteam.update');
+    Route::delete('/{teamMember}', [TeamMemberController::class, 'destroy'])->name('ourteam.destroy');
+});
 
 
 require __DIR__.'/auth.php';
