@@ -76,19 +76,7 @@
     </style>
 
     <!-- Hero Section -->
-    <section class="hero-container page-load-anim">
-        <img src="{{ asset('images/hero/bookstore.jpg') }}" alt="Bookstore background" class="clipped-image">
-        <div class="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-5"></div>
 
-        <!-- Wave Design -->
-        <div class="absolute bottom-0 inset-x-0 overflow-hidden wave-container animate-reveal-up" style="animation-delay: 0.3s">
-            <svg viewBox="0 0 1440 140" preserveAspectRatio="none" class="w-full h-full">
-                <path fill="#fff9e6" d="M0,70 C180,130 360,10 540,70 C720,130 900,10 1080,70 C1260,130 1440,10 1440,70 L1440,140 L0,140 Z"></path>
-                <path fill="#fff9e6" opacity="0.85" d="M0,80 C180,120 360,30 540,80 C720,120 900,30 1080,80 C1260,120 1440,30 1440,80 L1440,140 L0,140 Z"></path>
-                <path fill="#fff9e6" opacity="0.7" d="M0,90 C180,110 360,50 540,90 C720,110 900,50 1080,90 C1260,110 1440,50 1440,90 L1440,140 L0,140 Z"></path>
-            </svg>
-        </div>
-    </section>
 
     <!-- About Us Section -->
     <section class="py-4 px-4 bg-bookcycle-light">
@@ -159,10 +147,10 @@
                 <!-- Right Column - Images -->
                 <div class="relative h-[600px] scroll-reveal">
                     <div class="absolute top-0 left-0 w-3/5 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl z-10 animate-reveal-right">
-                        <img src="{{ $aboutUs->main_image ? Storage::url($aboutUs->main_image) : asset('images/books/book-stack.jpg') }}" alt="Book collection" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <img src="{{  asset('images/product-item1.jpg') }}" alt="Book collection" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                     </div>
                     <div class="absolute bottom-0 right-0 w-3/5 aspect-[3/4] rounded-2xl overflow-hidden shadow-xl animate-reveal-right" style="animation-delay: 0.2s">
-                        <img src="{{ $aboutUs->secondary_image ? Storage::url($aboutUs->secondary_image) : asset('images/books/reading.jpg') }}" alt="Person reading" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
+                        <img src="{{  asset('images/tab-item2.jpg') }}" alt="Person reading" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                     </div>
                 </div>
             </div>
@@ -216,16 +204,7 @@
         </div>
     </section>
 
-    <!-- Partners Section -->
-    <section class="py-16 bg-white">
-        @include("frontend.aboutus.partners.index")
-    </section>
-
-    <!-- Our Endorsed Brands -->
-    <section class="py-16 bg-bookcycle-light">
-        @include("frontend.aboutus.brands.index")
-    </section>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const scrollRevealElements = document.querySelectorAll('.scroll-reveal');

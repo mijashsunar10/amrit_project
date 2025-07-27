@@ -35,7 +35,7 @@
 
                 <div class="mt-8">
                     <button type="submit" 
-                            class="w-full bg-pastry-primary hover:bg-pastry-secondary text-white font-semibold py-3 px-4 rounded-md transition duration-150 transform hover:scale-105">
+                            class="w-full bg-black hover:bg-pastry-secondary text-white font-semibold py-3 px-4 rounded-md transition duration-150 transform hover:scale-105">
                         Create FAQ
                     </button>
                 </div>

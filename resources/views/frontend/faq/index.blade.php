@@ -99,7 +99,7 @@
                     <div class="relative z-10 text-center py-8 px-6">
                         <h1 class="text-4xl md:text-5xl font-bold text-amber-900 font-serif">
                             <span class="relative inline-block highlight-text">
-                                Bakery & Pastry School
+                               Book Cycle
                             </span>
                         </h1>
                         <div class="w-24 h-1 bg-amber-500 mx-auto my-4 rounded-full"></div>

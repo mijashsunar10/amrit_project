@@ -70,10 +70,10 @@
 
 										<ul>
 											<li class="active"><a href="{{route('index')}}">Home</a></li>
-											<li><a href="index.html">About</a></li>
-											<li><a href="index.html">Styles</a></li>
-											<li><a href="index.html">Blog</a></li>
-											<li><a href="index.html">Post Single</a></li>
+											<li><a href="{{route('aboutus')}}">About</a></li>
+											{{-- <li><a href="index.html">Styles</a></li> --}}
+											<li><a href="{{route('faqs.index')}}">Faq</a></li>
+											<li><a href="{{route('aboutus')}}">Team</a></li>
 											<li><a href="index.html">Our Store</a></li>
 											<li><a href="index.html">Product Single</a></li>
 											<li><a href="index.html">Contact</a></li>

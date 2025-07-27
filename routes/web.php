@@ -40,21 +40,6 @@ Route::controller(FaqController::class)->group(function () {
     });
 });
 
-Route::middleware(['auth'])->group(function () {
-    Route::get('/partners/create', [PartnerController::class, 'create'])->name('partners.create');
-    Route::post('/partners', [PartnerController::class, 'store'])->name('partners.store');
-    Route::get('/partners/{partner}/edit', [PartnerController::class, 'edit'])->name('partners.edit');
-    Route::put('/partners/{partner}', [PartnerController::class, 'update'])->name('partners.update');
-    Route::delete('/partners/{partner}', [PartnerController::class, 'destroy'])->name('partners.destroy');
-});
-Route::middleware(['auth'])->group(function () {
-    Route::get('/brands/create', [BrandController::class, 'create'])->name('brands.create');
-    Route::post('/brands', [BrandController::class, 'store'])->name('brands.store');
-    Route::get('/brands/{brand}/edit', [BrandController::class, 'edit'])->name('brands.edit');
-    Route::put('/brands/{brand}', [BrandController::class, 'update'])->name('brands.update');
-    Route::delete('/brands/{brand}', [BrandController::class, 'destroy'])->name('brands.destroy');
-});
-
 Route::get('/aboutus', [AboutUsController::class, 'index'])->name('aboutus');
 
 Route::middleware(['auth'])->group(function() {
