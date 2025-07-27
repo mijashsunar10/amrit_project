@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\FaqController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,4 +33,7 @@ Route::controller(FaqController::class)->group(function () {
     });
 });
 
+
+Route::get('/contact',[ContactController::class,'contact'])->name('contact');
+ Route::post('/contact/send', [ContactController::class, 'submitContactForm'])->name('contact.send');
 require __DIR__.'/auth.php';
