@@ -10,6 +10,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\TeamMemberController;
 use App\Models\AboutUs;
 use App\Models\TeamMember;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -60,4 +61,7 @@ Route::prefix('ourteam')->group(function () {
 });
 
 
+
+Route::get('/contact',[ContactController::class,'contact'])->name('contact');
+ Route::post('/contact/send', [ContactController::class, 'submitContactForm'])->name('contact.send');
 require __DIR__.'/auth.php';
