@@ -58,7 +58,7 @@
 
 	</section>
 
-	<section id="client-holder" data-aos="fade-up">
+	{{-- <section id="client-holder" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="inner-content">
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> --}}
 
 	<section id="featured-books" class="py-5 my-5">
 		<div class="container">

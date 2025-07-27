@@ -54,7 +54,7 @@
 
 					<div class="col-md-2">
 						<div class="main-logo">
-							<a href="index.html"><img src="images/main-logo.png" alt="logo"></a>
+							<a href="{{route('index')}}" class="text-3xl font-bold">BOOKCYCLE</a>
 						</div>
 
 					</div>
@@ -64,12 +64,12 @@
 						<nav id="navbar">
 							<div class="main-menu stellarnav">
 								<ul class="menu-list">
-									<li class="menu-item active"><a href="#home">Home</a></li>
+									<li class="menu-item active"><a href="{{route('index')}}">Home</a></li>
 									<li class="menu-item has-sub">
 										<a href="#pages" class="nav-link">Pages</a>
 
 										<ul>
-											<li class="active"><a href="index.html">Home</a></li>
+											<li class="active"><a href="{{route('index')}}">Home</a></li>
 											<li><a href="index.html">About</a></li>
 											<li><a href="index.html">Styles</a></li>
 											<li><a href="index.html">Blog</a></li>

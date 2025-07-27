@@ -20,6 +20,9 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/vendor.css')}}">
 	<link rel="stylesheet" type="text/css" href="{{asset('style.css')}}">
 
+	  @vite(['resources/css/app.css', 'resources/js/app.js'])
+      
+
 </head>
 
 <body>
